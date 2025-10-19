@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S-M Gebrauchtbau - Ihr Partner für Bau, Sanierung und Projektmanagement in Deutschland">
+    <meta name="keywords" content="Bau, Sanierung, Projektmanagement, Baustoffhandel, Nachhaltiges Bauen">
+    <title>S-M Gebrauchtbau - Bauen mit Vertrauen</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "S-M Gebrauchtbau",
+      "description": "Bau, Sanierung und Projektmanagement",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49-XXX-XXXXXXX",
+      "email": "info@sm-gebrauchtbau.de"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper" id="loaderWrapper">
+        <div class="loader-content">
+            <div class="construction-crane">
+                <div class="crane-arm"></div>
+                <div class="crane-cable"></div>
+                <div class="crane-hook">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+            </div>
+            <div class="building-blocks">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <h2 class="loader-text">S-M Gebrauchtbau</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="loader-subtitle" data-de="Bauen mit Vertrauen" data-sq="Ndërtimi me Besim" data-en="Building with Trust">Bauen mit Vertrauen</p>
+            
+            <!-- Added powered by WhiteLuckDigital section -->
+            <div class="powered-by">
+                <p class="powered-text">Powered by WhiteLuckDigital</p>
+                <img src="https://i.imgur.com/oHLl1gY.png" alt="WhiteLuckDigital Logo" class="powered-logo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-hard-hat"></i>
+                    <span>S-M Gebrauchtbau</span>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#hero" class="nav-link" data-de="Start" data-sq="Fillimi" data-en="Home">Start</a>
+                    <a href="#about" class="nav-link" data-de="Über Uns" data-sq="Rreth Nesh" data-en="About Us">Über Uns</a>
+                    <a href="#services" class="nav-link" data-de="Leistungen" data-sq="Shërbimet" data-en="Services">Leistungen</a>
+                    <a href="#projects" class="nav-link" data-de="Projekte" data-sq="Projektet" data-en="Projects">Projekte</a>
+                    <a href="#contact" class="nav-link" data-de="Kontakt" data-sq="Kontakti" data-en="Contact">Kontakt</a>
+                    
+                    <!-- Added language switcher inside mobile menu for better mobile UX -->
+                    <div class="language-switcher mobile-lang">
+                        <button class="lang-btn active" data-lang="de">DE</button>
+                        <button class="lang-btn" data-lang="sq">SQ</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+                
+                <div class="nav-actions">
+                    <!-- Desktop language switcher -->
+                    <div class="language-switcher desktop-lang">
+                        <button class="lang-btn active" data-lang="de">DE</button>
+                        <button class="lang-btn" data-lang="sq">SQ</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-video">
+        <video class="hero-video-bg" autoplay muted loop playsinline>
+            <source src="hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title reveal" data-de="Bauen mit Vertrauen – Qualität, Erfahrung, Präzision" data-sq="Ndërtimi me Besim – Cilësi, Përvojë, Precizion" data-en="Building with Trust – Quality, Experience, Precision">
+            Bauen mit Vertrauen – Qualität, Erfahrung, Präzision
+        </h1>
+        <p class="hero-subtitle reveal" data-de="Ihr Partner für Bau, Sanierung und Projektmanagement" data-sq="Partneri juaj për ndërtim, rinovim dhe menaxhim projektesh" data-en="Your partner for construction, renovation and project management">
+            Ihr Partner für Bau, Sanierung und Projektmanagement
+        </p>
+        <button class="cta-button reveal" data-de="Jetzt Kontaktieren" data-sq="Na Kontaktoni Tani" data-en="Contact Us">
+            Jetzt Kontaktieren
+        </button>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-de="Über Uns" data-sq="Rreth Nesh" data-en="About Us">Über Uns</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p class="about-description" data-de="S-M Gebrauchtbau ist ein vertrauenswürdiges Bau- und Renovierungsunternehmen mit Sitz in Deutschland. Wir konzentrieren uns auf gebrauchte Baumaterialien, Projektmanagement, Umbau und nachhaltige Baupraktiken." data-sq="S-M Gebrauchtbau është një kompani e besueshme ndërtimi dhe rinovimi me bazë në Gjermani. Ne fokusohemi në materiale ndërtimi të përdorura, menaxhim projektesh, rimodelim dhe praktika ndërtimi të qëndrueshme." data-en="S-M Gebrauchtbau is a trusted construction and renovation company based in Germany. We focus on used building materials, project management, remodeling, and sustainable building practices.">
+                        S-M Gebrauchtbau ist ein vertrauenswürdiges Bau- und Renovierungsunternehmen mit Sitz in Deutschland. Wir konzentrieren uns auf gebrauchte Baumaterialien, Projektmanagement, Umbau und nachhaltige Baupraktiken.
+                    </p>
+                    <p class="about-description" data-de="Mit jahrelanger Erfahrung und einem engagierten Team bieten wir qualitativ hochwertige Dienstleistungen, die auf Zuverlässigkeit, Innovation und Nachhaltigkeit basieren. Unser Ziel ist es, Ihre Bauprojekte mit Präzision und Professionalität umzusetzen." data-sq="Me vite përvojë dhe një ekip të përkushtuar, ne ofrojmë shërbime cilësore të bazuara në besueshmëri, inovacion dhe qëndrueshmëri. Qëllimi ynë është të realizojmë projektet tuaja të ndërtimit me precizion dhe profesionalizëm." data-en="With years of experience and a dedicated team, we provide high-quality services based on reliability, innovation, and sustainability. Our goal is to execute your construction projects with precision and professionalism.">
+                        Mit jahrelanger Erfahrung und einem engagierten Team bieten wir qualitativ hochwertige Dienstleistungen, die auf Zuverlässigkeit, Innovation und Nachhaltigkeit basieren. Unser Ziel ist es, Ihre Bauprojekte mit Präzision und Professionalität umzusetzen.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item reveal">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-de="Über 15 Jahre Erfahrung" data-sq="Mbi 15 vjet përvojë" data-en="Over 15 years of experience">Über 15 Jahre Erfahrung</span>
+                        </div>
+                        <div class="feature-item reveal">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-de="Zertifizierte Fachkräfte" data-sq="Profesionistë të certifikuar" data-en="Certified professionals">Zertifizierte Fachkräfte</span>
+                        </div>
+                        <div class="feature-item reveal">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-de="Nachhaltige Lösungen" data-sq="Zgjidhje të qëndrueshme" data-en="Sustainable solutions">Nachhaltige Lösungen</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-images reveal">
+                    <div class="image-grid">
+                        <img src="https://cdn.cpdonline.co.uk/wp-content/uploads/2023/03/04151341/Everything-you-need-to-know-about-Construction-Site-Safety.jpg" alt="Team" class="about-img">
+                        <img src="https://heavyequipmenttraining.com/wp-content/uploads/2020/12/west-coast-training-what-kind-of-equipment-will-i-see-on-a-construction-site.jpg" alt="Machinery" class="about-img">
+                        <img src="https://www.michaelpage.com/sites/michaelpage.com/files/styles/advice_node_desktop/public/legacy/Top%25206%2520Construction%2520Project%2520Challenges.jpg.webp?itok=7EfH2MDc" alt="Project" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-de="Unsere Leistungen" data-sq="Shërbimet Tona" data-en="Our Services">Unsere Leistungen</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Neubau" data-sq="Ndërtim i Ri" data-en="New Construction">Neubau</h3>
+                    <p class="service-description" data-de="Professionelle Planung und Ausführung von Neubauprojekten mit modernsten Techniken und Materialien." data-sq="Planifikim dhe ekzekutim profesional i projekteve të ndërtimit të ri me teknika dhe materiale më të fundit." data-en="Professional planning and execution of new construction projects with state-of-the-art techniques and materials.">
+                        Professionelle Planung und Ausführung von Neubauprojekten mit modernsten Techniken und Materialien.
+                    </p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Renovierung" data-sq="Rinovim" data-en="Renovation">Renovierung</h3>
+                    <p class="service-description" data-de="Umfassende Renovierungsarbeiten für Wohn- und Gewerbeimmobilien mit Fokus auf Qualität und Effizienz." data-sq="Punë rinovimi gjithëpërfshirëse për prona banimi dhe komerciale me fokus në cilësi dhe efikasitet." data-en="Comprehensive renovation work for residential and commercial properties with a focus on quality and efficiency.">
+                        Umfassende Renovierungsarbeiten für Wohn- und Gewerbeimmobilien mit Fokus auf Qualität und Effizienz.
+                    </p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Altbausanierung" data-sq="Restaurim Ndërtesash të Vjetra" data-en="Old Building Restoration">Altbausanierung</h3>
+                    <p class="service-description" data-de="Fachgerechte Sanierung historischer Gebäude unter Berücksichtigung von Denkmalschutz und modernen Standards." data-sq="Restaurim i kualifikuar i ndërtesave historike duke respektuar mbrojtjen e monumenteve dhe standardet moderne." data-en="Expert restoration of historic buildings considering monument protection and modern standards.">
+                        Fachgerechte Sanierung historischer Gebäude unter Berücksichtigung von Denkmalschutz und modernen Standards.
+                    </p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Projektmanagement" data-sq="Menaxhim Projektesh" data-en="Project Management">Projektmanagement</h3>
+                    <p class="service-description" data-de="Komplette Projektsteuerung von der Planung bis zur Fertigstellung mit transparenter Kommunikation." data-sq="Drejtim i plotë i projektit nga planifikimi deri në përfundim me komunikim transparent." data-en="Complete project management from planning to completion with transparent communication.">
+                        Komplette Projektsteuerung von der Planung bis zur Fertigstellung mit transparenter Kommunikation.
+                    </p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Baustoffhandel" data-sq="Tregti Materialesh Ndërtimi" data-en="Building Materials Trading">Baustoffhandel</h3>
+                    <p class="service-description" data-de="Handel mit hochwertigen gebrauchten Baumaterialien für nachhaltige und kosteneffiziente Projekte." data-sq="Tregti me materiale ndërtimi të përdorura cilësore për projekte të qëndrueshme dhe kosto-efektive." data-en="Trading in high-quality used building materials for sustainable and cost-effective projects.">
+                        Handel mit hochwertigen gebrauchten Baumaterialien für nachhaltige und kosteneffiziente Projekte.
+                    </p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Nachhaltiges Bauen" data-sq="Ndërtim i Qëndrueshëm" data-en="Sustainable Construction">Nachhaltiges Bauen</h3>
+                    <p class="service-description" data-de="Umweltfreundliche Baukonzepte mit Fokus auf Energieeffizienz und ökologische Materialien." data-sq="Koncepte ndërtimi miqësore me mjedisin me fokus në efikasitetin energjetik dhe materiale ekologjike." data-en="Environmentally friendly building concepts with a focus on energy efficiency and ecological materials.">
+                        Umweltfreundliche Baukonzepte mit Fokus auf Energieeffizienz und ökologische Materialien.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-de="Unsere Projekte" data-sq="Projektet Tona" data-en="Our Projects">Unsere Projekte</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card reveal" data-project="1">
+                    <img src="https://cdn.ca.emap.com/wp-content/uploads/sites/9/2017/04/FENCHURCH-ST-0516004.jpg" alt="Project 1" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title" data-de="Wohnkomplex Modernisierung" data-sq="Modernizimi i Kompleksit Banimi" data-en="Residential Complex Modernization">Wohnkomplex Modernisierung</h3>
+                        <p class="project-location">Berlin, Deutschland</p>
+                        <button class="project-btn" data-de="Details ansehen" data-sq="Shiko Detajet" data-en="View Details">Details ansehen</button>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal" data-project="2">
+                    <img src="https://www.concreterenovations.co.uk/wp-content/uploads/2024/12/file-558-fdeed170651e7348ea399877bb1e9497-1.jpg" alt="Project 2" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title" data-de="Gewerbegebäude Sanierung" data-sq="Restaurimi i Ndërtesës Komerciale" data-en="Commercial Building Restoration">Gewerbegebäude Sanierung</h3>
+                        <p class="project-location">München, Deutschland</p>
+                        <button class="project-btn" data-de="Details ansehen" data-sq="Shiko Detajet" data-en="View Details">Details ansehen</button>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal" data-project="3">
+                    <img src="https://www.concreterenovations.co.uk/wp-content/uploads/2024/12/file-713-6f215b6d2e2d2efb850fd922f8a20ae6-1.jpg" alt="Project 3" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title" data-de="Historisches Gebäude Restaurierung" data-sq="Restaurimi i Ndërtesës Historike" data-en="Historic Building Restoration">Historisches Gebäude Restaurierung</h3>
+                        <p class="project-location">Hamburg, Deutschland</p>
+                        <button class="project-btn" data-de="Details ansehen" data-sq="Shiko Detajet" data-en="View Details">Details ansehen</button>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal" data-project="4">
+                    <img src="https://www.tenterdenroofing.co.uk/wp-content/uploads/2025/05/1000026111-768x576.jpg" alt="Project 4" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title" data-de="Neubau Bürokomplex" data-sq="Ndërtim i Ri Kompleksi Zyrash" data-en="New Office Complex Construction">Neubau Bürokomplex</h3>
+                        <p class="project-location">Frankfurt, Deutschland</p>
+                        <button class="project-btn" data-de="Details ansehen" data-sq="Shiko Detajet" data-en="View Details">Details ansehen</button>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal" data-project="5">
+                    <img src="https://www.hauteresidence.com/wp-content/uploads/2016/09/3063270-slide-s-5-this-new-design-is-the-largest-passive-house-apartment-complex-in-the-world.jpg" alt="Project 5" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title" data-de="Nachhaltiges Wohnprojekt" data-sq="Projekt Banimi i Qëndrueshëm" data-en="Sustainable Housing Project">Nachhaltiges Wohnprojekt</h3>
+                        <p class="project-location">Stuttgart, Deutschland</p>
+                        <button class="project-btn" data-de="Details ansehen" data-sq="Shiko Detajet" data-en="View Details">Details ansehen</button>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal" data-project="6">
+                    <img src="https://opus-4.com/wp-content/uploads/2023/01/converting-industrial-unit-warehouse-to-office-space.jpg" alt="Project 6" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title" data-de="Industriehalle Umbau" data-sq="Rimodelimi i Halles Industriale" data-en="Industrial Hall Conversion">Industriehalle Umbau</h3>
+                        <p class="project-location">Köln, Deutschland</p>
+                        <button class="project-btn" data-de="Details ansehen" data-sq="Shiko Detajet" data-en="View Details">Details ansehen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-de="Kontakt" data-sq="Kontakti" data-en="Contact">Kontakt</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-de="Adresse" data-sq="Adresa" data-en="Address">Adresse</h3>
+                            <p>Selver gango<br>12345 Burda, Deutschland</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-de="Telefon" data-sq="Telefoni" data-en="Phone">Telefon</h3>
+                            <p>+selverkingi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@sm-gebrauchtbau.de</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3 data-de="Öffnungszeiten" data-sq="Orari i Punës" data-en="Business Hours">Öffnungszeiten</h3>
+                            <p data-de="Mo-Fr: 08:00 - 18:00 Uhr<br>Sa: 09:00 - 14:00 Uhr" data-sq="E Hënë-E Premte: 08:00 - 18:00<br>E Shtunë: 09:00 - 14:00" data-en="Mon-Fri: 08:00 - 18:00<br>Sat: 09:00 - 14:00">
+                                Mo-Fr: 08:00 - 18:00 Uhr<br>Sa: 09:00 - 14:00 Uhr
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.4926871731!2d13.404954!3d52.520008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBerlin%2C%20Germany!5e0!3m2!1sen!2s!4v1234567890" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-de="Name" data-sq="Emri" data-en="Name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" data-de="Telefon (optional)" data-sq="Telefoni (opsional)" data-en="Phone (optional)">Telefon (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" data-de="Nachricht" data-sq="Mesazhi" data-en="Message">Nachricht</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" data-de="Nachricht senden" data-sq="Dërgo Mesazhin" data-en="Send Message">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>S-M Gebrauchtbau</span>
+                    </div>
+                    <p class="footer-description" data-de="Ihr vertrauenswürdiger Partner für Bau, Sanierung und Projektmanagement in Deutschland." data-sq="Partneri juaj i besueshëm për ndërtim, rinovim dhe menaxhim projektesh në Gjermani." data-en="Your trusted partner for construction, renovation and project management in Germany.">
+                        Ihr vertrauenswürdiger Partner für Bau, Sanierung und Projektmanagement in Deutschland.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-de="Schnelllinks" data-sq="Lidhje të Shpejta" data-en="Quick Links">Schnelllinks</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about" data-de="Über Uns" data-sq="Rreth Nesh" data-en="About Us">Über Uns</a></li>
+                        <li><a href="#services" data-de="Leistungen" data-sq="Shërbimet" data-en="Services">Leistungen</a></li>
+                        <li><a href="#projects" data-de="Projekte" data-sq="Projektet" data-en="Projects">Projekte</a></li>
+                        <li><a href="#contact" data-de="Kontakt" data-sq="Kontakti" data-en="Contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-de="Folgen Sie uns" data-sq="Na Ndiqni" data-en="Follow Us">Folgen Sie uns</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 S-M Gebrauchtbau - <span data-de="Alle Rechte vorbehalten" data-sq="Të gjitha të drejtat e rezervuara" data-en="All rights reserved">Alle Rechte vorbehalten</span></p>
+                <p class="developer-credit">Powered by <a href="instagram.com/whiteluckdigital" target="_blank">WhiteLuckDigital</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle">Project Title</h2>
+                <div class="modal-gallery" id="modalGallery">
+                    <!-- Images will be inserted here by JavaScript -->
+                </div>
+                <p class="modal-description" id="modalDescription">Project description will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
