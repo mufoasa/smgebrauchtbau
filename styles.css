@@ -233,6 +233,12 @@ body {
     transform: translateX(-50%) translateY(-5px);
   }
 }
+/* Mobile: show entire video */
+@media (max-width: 768px) {
+  .hero-video-bg {
+    object-fit: contain;
+  }
+}
 
 
 /* Responsive adjustments */
@@ -1069,5 +1075,6 @@ section {
     font-size: 0.8rem;
   }
 }
+
 
 
