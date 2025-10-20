@@ -103,13 +103,21 @@
         </nav>
     </header>
 
-   <!-- Hero Section -->
+ <!-- Hero Section -->
 <section id="hero" class="hero">
     <div class="hero-video">
-        <video class="hero-video-bg" autoplay muted loop playsinline>
+        <!-- Desktop Video -->
+        <video class="hero-video-desktop" autoplay muted loop playsinline>
             <source src="hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+
+        <!-- Mobile Video -->
+        <video class="hero-video-mobile" autoplay muted loop playsinline>
+            <source src="hero-video-mobile.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -127,7 +135,6 @@
         <i class="fas fa-chevron-down"></i>
     </div>
 </section>
-
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -455,3 +462,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
