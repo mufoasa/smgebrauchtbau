@@ -158,20 +158,16 @@ body {
 }
 
 /* Desktop video */
-.hero-video-desktop {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* Mobile video (hidden by default) */
+.hero-video-desktop,
 .hero-video-mobile {
-  display: none;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 /* Overlay */
@@ -272,17 +268,6 @@ body {
     font-size: 1rem;
   }
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-}
-
 
 /* Section Styles */
 section {
@@ -1107,6 +1092,7 @@ section {
     font-size: 0.8rem;
   }
 }
+
 
 
 
