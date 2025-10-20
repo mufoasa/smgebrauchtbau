@@ -157,7 +157,7 @@ body {
   overflow: hidden;
 }
 
-/* Desktop video */
+/* Desktop & mobile video */
 .hero-video-desktop,
 .hero-video-mobile {
   position: absolute;
@@ -168,6 +168,11 @@ body {
   min-height: 100%;
   width: auto;
   height: auto;
+}
+
+/* Hide mobile video by default */
+.hero-video-mobile {
+  display: none;
 }
 
 /* Overlay */
@@ -252,6 +257,9 @@ body {
   }
   .hero-video-mobile {
     display: block;
+    object-fit: cover; /* adjust to 'contain' if you want full video visible */
+    width: 100%;
+    height: 100%;
   }
 
   /* Adjust text size for mobile */
@@ -1092,6 +1100,7 @@ section {
     font-size: 0.8rem;
   }
 }
+
 
 
 
